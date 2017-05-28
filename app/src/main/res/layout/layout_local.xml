@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--本地歌曲-->
+    <RelativeLayout
+        android:id="@+id/rel_local"
+        style="@style/mymusic_item"
+        android:layout_marginTop="0dp"
+        >
+        <ImageView
+            android:id="@+id/localmusic"
+            style="@style/mymusic_image"
+            android:src="@mipmap/local_music"/>
+        <TextView
+            style="@style/mymusic_tv"
+            android:text="本地歌曲"
+            android:layout_toRightOf="@id/localmusic"
+            />
+    </RelativeLayout>
+
+    <!--试听记录-->
+    <RelativeLayout
+        android:id="@+id/rel_listen"
+        style="@style/mymusic_item"
+        >
+        <ImageView
+            android:id="@+id/listenRecords"
+            style="@style/mymusic_image"
+            android:src="@mipmap/listen_records"/>
+        <TextView
+            style="@style/mymusic_tv"
+            android:text="试听记录"
+            android:layout_toRightOf="@id/listenRecords"
+            />
+    </RelativeLayout>
+
+    <!--下载管理-->
+    <RelativeLayout
+        android:id="@+id/rel_download"
+        style="@style/mymusic_item"
+        >
+        <ImageView
+            android:id="@+id/downloadmanager"
+            style="@style/mymusic_image"
+            android:src="@mipmap/download"/>
+        <TextView
+            style="@style/mymusic_tv"
+            android:text="下载管理"
+            android:layout_toRightOf="@id/downloadmanager"
+            />
+    </RelativeLayout>
+
+    <!--购买播放-->
+
+    <RelativeLayout
+        android:id="@+id/rel__buy"
+        style="@style/mymusic_item"
+        >
+        <ImageView
+            android:id="@+id/buyRecords"
+            style="@style/mymusic_image"
+            android:src="@mipmap/buy"/>
+        <TextView
+            style="@style/mymusic_tv"
+            android:text="购买播放"
+            android:layout_toRightOf="@id/buyRecords"
+            />
+    </RelativeLayout>
+
+    <!--我的收藏-->
+
+    <RelativeLayout
+        android:id="@+id/rel_collections"
+        style="@style/mymusic_item"
+        >
+        <ImageView
+            android:id="@+id/collections"
+            style="@style/mymusic_image"
+            android:src="@mipmap/collections"/>
+        <TextView
+            style="@style/mymusic_tv"
+            android:text="我的收藏"
+            android:layout_toRightOf="@id/collections"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

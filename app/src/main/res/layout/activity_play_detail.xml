@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zilong.demo.changpiandian.activity.PlayDetail">
+
+    <!--播放界面-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image_play_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/beauty"
+            android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/play_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:alpha="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@+id/play_return"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/getreturn"/>
+            <TextView
+                android:id="@+id/play_songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歌名"
+                android:layout_toRightOf="@id/play_return"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:id="@+id/play_share"
+                android:layout_width="20dp"
+                android:layout_height="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/play_more"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    
+    
+    <!--最下方的一组按钮-->
+    <LinearLayout
+        android:id="@+id/linear_play"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true">
+        
+        <!--播放模式-->
+        <ImageView
+            android:id="@+id/play_mode"
+            android:layout_width="38dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="17dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/mode_cyclelist"
+            />
+        <!--上一曲-->
+        <ImageView
+            android:id="@+id/play_last"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="35dp"
+            android:src="@mipmap/lastsong"/>
+        <!--播放-->
+        <ImageView
+            android:id="@+id/play_or_pause"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="34dp"
+            android:src="@mipmap/pause"/>
+        <!--下一曲-->
+        <ImageView
+            android:id="@+id/play_next"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="34dp"
+            android:src="@mipmap/nextsong"/>
+        <!--播放列表-->
+        <ImageView
+            android:id="@+id/play_list"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/musiclist"/>
+
+    </LinearLayout>
+
+    <!--进度条-->
+    <LinearLayout
+        android:id="@+id/linear_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear_play"
+        android:layout_marginBottom="33dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/time_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            />
+        <SeekBar
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:id="@+id/seek_progress"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="2dp"
+            />
+        <TextView
+            android:id="@+id/time_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"/>
+
+    </LinearLayout>
+
+    <!--操作-->
+    <LinearLayout
+        android:id="@+id/play_action"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_above="@id/linear_seekbar"
+        android:layout_marginBottom="19dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/collect"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="85dp"
+            android:src="@mipmap/buyit"
+            />
+
+    </LinearLayout>
+
+    <!--歌词显示控件-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="10"
+        android:layout_below="@id/play_toolbar"
+        android:layout_above="@id/play_action"
+        android:layout_marginBottom="38dp"
+        android:layout_marginTop="82dp"
+        android:gravity="center_horizontal"
+        android:lines="10"
+        android:text="岩烧店的隔壁是武术馆"
+        android:textSize="19sp"
+        android:textColor="#00ff33"
+        />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

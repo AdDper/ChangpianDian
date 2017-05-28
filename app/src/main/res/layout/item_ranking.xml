@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/ranking"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/first"/>
+    <ImageView
+        android:id="@+id/image_ranking_singer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ranking"
+        android:src="@mipmap/song"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/ranking_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_ranking_singer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:text="歌名"/>
+    <ImageView
+        android:id="@+id/fire"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/heat"
+        android:layout_toRightOf="@id/image_ranking_singer"
+        android:layout_below="@id/ranking_song"
+        />
+    <TextView
+        android:id="@+id/ranking_heat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fire"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="1000"
+        android:layout_alignBottom="@id/fire"/>
+    <TextView
+        android:id="@+id/ranking_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/image_ranking_singer"
+        android:layout_below="@id/fire"
+        android:text="哎哟不错哦"/>
+
+</RelativeLayout>

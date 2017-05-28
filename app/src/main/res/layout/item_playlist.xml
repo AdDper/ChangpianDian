@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/playlist_listview_item_rel"
+    android:minHeight="40dp"
+    >
+
+    <TextView
+        android:id="@+id/playlist_item_songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌名"
+        android:textSize="@dimen/playlist_listview_item_textSize"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tw"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_toRightOf="@id/playlist_item_songName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="@dimen/playlist_listview_item_textSize"/>
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/playlist_item_singerName"
+        android:layout_toRightOf="@id/tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌手名"
+        android:textSize="@dimen/playlist_listview_item_textSize"
+        />
+
+    <ImageView
+        android:id="@+id/playlist_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/pl_delete"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

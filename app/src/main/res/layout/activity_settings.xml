@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context="com.zilong.demo.changpiandian.activity.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/onlywifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅WIFI下联网"
+            android:layout_below="@id/net"
+            android:layout_marginTop="3dp"
+            />
+        <Switch
+            android:id="@+id/switch_onlywifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/onlywifi"
+            android:layout_alignBottom="@id/onlywifi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2G/3G网络不消耗流量"
+            android:layout_below="@id/onlywifi"
+            android:layout_marginTop="5dp"
+            android:textColor="#EDEDED"
+            />
+
+        <!--切换按钮控件-->
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/fenge1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@id/rel_wifi"
+        android:layout_marginTop="10dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/use_net"
+        android:layout_below="@id/fenge1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_onlynet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用2G/3G/4G网络播放"
+            android:layout_centerVertical="true"/>
+        <!--切换按钮控件-->
+        <Switch
+            android:id="@+id/switch_usenet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/tv_onlynet"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fenge2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@id/use_net"
+        android:layout_marginTop="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/netdownload"
+        android:layout_below="@id/fenge2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_netdownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用2G/3G/4G网络下载"
+            android:layout_centerVertical="true"/>
+        <!--切换按钮控件-->
+        <Switch
+            android:id="@+id/switch_netdownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/tv_netdownload"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/haha"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@id/netdownload"
+        android:layout_marginTop="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/download"
+        android:layout_below="@+id/haha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp">
+        <TextView
+            android:id="@+id/playanddownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放与下载"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_below="@id/playanddownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线播放音质"
+            android:layout_marginTop="3dp"/>
+        <!--选择控件-->
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fenge3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@id/download"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/cache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="缓存设置"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/download"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/fenge4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@id/cache"
+        android:layout_marginTop="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_auto"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/fenge4">
+        <TextView
+            android:id="@+id/tv_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动下载更新安装包"
+            android:layout_centerVertical="true"/>
+        <!--切换按钮控件-->
+        <Switch
+            android:id="@+id/switch_auto_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/tv_auto"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/fenge5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@id/rel_auto"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="帮助与反馈"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/fenge5"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/fenge6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"
+        android:layout_below="@id/help"
+        android:layout_marginTop="3dp"/>
+</RelativeLayout>

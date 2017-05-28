@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/music_banner_height"
+            >
+            <!--轮播图-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/musiclibrary_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <!--指示性图标-->
+            <LinearLayout
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout>
+            <!--        <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@mipmap/icon_home_banner_a"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>-->
+        </RelativeLayout>
+
+        <!--过渡区-->
+        <RelativeLayout
+            android:background="#EDEDED"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/music_rel_height"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/hot"
+                android:layout_width="@dimen/music_image_hot_width"
+                android:layout_height="@dimen/music_image_hot_height"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/hot"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最热专辑"
+                android:layout_toRightOf="@id/hot"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"/>
+            <ImageView
+                android:layout_width="@dimen/music_image_logo_width"
+                android:layout_height="@dimen/music_image_logo_height"
+                android:src="@mipmap/hot_4"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+
+</LinearLayout>

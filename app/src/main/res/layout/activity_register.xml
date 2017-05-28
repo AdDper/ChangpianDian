@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/register_bg"
+    tools:context="com.zilong.demo.changpiandian.activity.RegisterActivity">
+    <!--注册界面-->
+
+    <!--LOGO-->
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo"/>
+    <!--小咖-->
+    <TextView
+        android:id="@+id/tv_xiaoka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45px"
+        android:text="小咖"
+        android:layout_below="@id/image_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <!--唱片店-->
+    <TextView
+        android:id="@+id/tv_changpiandian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45px"
+        android:text="唱片店"
+        android:layout_below="@id/tv_xiaoka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        />
+
+    <!--用户名-->
+    <LinearLayout
+        android:id="@+id/linear_userName"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_register"
+        android:alpha="0.8"
+        android:layout_width="240dp"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_changpiandian"
+        android:layout_marginTop="60dp"
+        >
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/phone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/edit_reg_username"
+            android:background="@null"
+            android:textColor="#e6303431"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="手机号"
+            android:paddingLeft="10dp"
+            android:textSize="28px"
+            android:cursorVisible="false"/>
+    </LinearLayout>
+
+
+    <!--密码-->
+    <RelativeLayout
+        android:id="@+id/linear_pwd"
+        android:layout_width="240dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/linear_userName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_register"
+        >
+        <ImageView
+            android:id="@+id/image_pwd_icon"
+            android:layout_width="19dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/code"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/edit_yanzhengma"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:layout_toRightOf="@id/image_pwd_icon"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:hint="短信验证码"
+            android:paddingLeft="10dp"
+            android:textSize="28px"/>
+
+    </RelativeLayout>
+
+    <!--发送验证码-->
+    <Button
+        android:id="@+id/send"
+        android:layout_width="152dp"
+        android:layout_height="34dp"
+        android:layout_toRightOf="@id/linear_pwd"
+        android:layout_alignBottom="@id/linear_pwd"
+        android:text="发送"
+        android:background="@drawable/shape_register"
+        android:layout_marginLeft="10dp"/>
+
+
+    <!--设置密码-->
+    <RelativeLayout
+        android:id="@+id/linear_setpwd"
+        android:layout_width="240dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/linear_pwd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/shape_register"
+        >
+        <ImageView
+            android:id="@+id/image_setpwd_icon"
+            android:layout_width="19dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/password"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/edit_reg_password"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:layout_toRightOf="@id/image_setpwd_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="设置登陆密码，不少于六位"
+            android:paddingLeft="10dp"
+            android:textSize="28px"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/prompted_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_setpwd"
+        android:layout_alignLeft="@id/linear_setpwd"
+        android:text="1209"
+        android:layout_marginTop="10dp"
+        android:textColor="#f00"
+        android:visibility="invisible"/>
+
+
+    <!--注册按钮-->
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:background="@drawable/shape_register"
+        android:layout_below="@id/linear_setpwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="注册"/>
+
+    <!--服务协议-->
+    <TextView
+        android:layout_below="@id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册即视为小咖唱片店《用户服务协议》和《隐私政策》"
+        android:textSize="20px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!--已有账号登陆-->
+    <TextView
+        android:id="@+id/login_quick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已有账号，立即登陆"
+        android:textSize="30px"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

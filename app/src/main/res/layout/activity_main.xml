@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingPaneLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.zilong.demo.changpiandian.activity.MainActivity">
+
+
+ <!--   <LinearLayout
+        android:orientation="vertical"
+        android:id = "@+id/navigation"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >-->
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <!--登录头像-->
+                <RelativeLayout
+                    android:id="@+id/rel_usericon"
+                    android:background="@mipmap/login_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                    <ImageView
+                        android:id="@+id/user_icon"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/login_not_icon"/>
+                    <TextView
+                        android:layout_below="@id/user_icon"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="未登录"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+                <!--个人信息-->
+                <RelativeLayout
+                    android:id="@+id/rel_userinfo"
+                    style="@style/minePage"
+                    android:layout_width="match_parent"
+                    >
+                    <ImageView
+                        android:src="@mipmap/user_info"
+                        style="@style/mine_detail_image"
+                        android:id="@+id/info_pic"
+                        />
+                    <TextView
+                        style="@style/mine_detail_textview"
+                        android:layout_toRightOf="@id/info_pic"
+                        android:text="个人信息"
+                        />
+
+                </RelativeLayout>
+
+                <!--歌手入驻-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rel_join"
+                    style="@style/minePage"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/singer_pic"
+                        style="@style/mine_detail_image"
+                        android:src="@mipmap/singer"
+                        />
+
+                    <TextView
+                        style="@style/mine_detail_textview"
+                        android:id="@+id/singer_status"
+                        android:layout_toRightOf="@id/singer_pic"
+                        android:text="歌手入驻"
+                        android:layout_marginLeft="15dp"
+                        />
+                </RelativeLayout>
+
+                <!--我的消息-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rel_mes"
+                    style="@style/minePage"
+                    >
+                    <ImageView
+                        android:id="@+id/mes_pic"
+                        style="@style/mine_detail_image"
+                        android:src="@mipmap/code"/>
+                    <TextView
+                        style="@style/mine_detail_textview"
+                        android:layout_toRightOf="@id/mes_pic"
+                        android:text="我的消息"
+                        />
+
+                </RelativeLayout>
+
+                <!--我的作品-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rel_works"
+                    style="@style/minePage"
+                    >
+                    <ImageView
+                        android:id="@+id/works_pic"
+                        style="@style/mine_detail_image"
+                        android:src="@mipmap/works"/>
+                    <TextView
+                        style="@style/mine_detail_textview"
+                        android:layout_toRightOf="@id/works_pic"
+                        android:text="我的作品"
+                        />
+                </RelativeLayout>
+
+                <!--我的订单-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rel_orders"
+                    style="@style/minePage"
+                    >
+                    <ImageView
+                        android:id="@+id/orders_pic"
+                        style="@style/mine_detail_image"
+                        android:src="@mipmap/orders"
+                        />
+
+                    <TextView
+                        style="@style/mine_detail_textview"
+                        android:layout_toRightOf="@id/orders_pic"
+                        android:text="我的订单"
+                        />
+
+                </RelativeLayout>
+
+                <!--vip-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rel_vip"
+                    style="@style/minePage"
+                    >
+                    <ImageView
+                        android:id="@+id/vip_pic"
+                        style="@style/mine_detail_image"
+                        android:src="@mipmap/vip"/>
+
+                    <TextView
+                        style="@style/mine_detail_textview"
+                        android:text="会员VIP"
+                        android:layout_toRightOf="@+id/vip_pic"
+                        android:id="@+id/textView" />
+
+
+                </RelativeLayout>
+
+                <!--设置-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/rel_settings"
+                    style="@style/minePage"
+                    >
+                    <ImageView
+                        android:id="@+id/settings_pic"
+                        style="@style/mine_detail_image"
+                        android:src="@mipmap/settings"/>
+                    <TextView
+                        style="@style/mine_detail_textview"
+                        android:layout_toRightOf="@id/settings_pic"
+                        android:text="设置"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+        <!--</ScrollView>-->
+        <!--</LinearLayout>-->
+<!--
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_head_main"
+        app:menu="@menu/activity_main_drawer">
+
+
+    </android.support.design.widget.NavigationView>
+-->
+
+    <include
+        layout="@layout/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</android.support.v4.widget.SlidingPaneLayout>

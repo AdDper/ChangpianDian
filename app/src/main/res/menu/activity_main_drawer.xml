@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/user_info"
+            android:icon="@mipmap/heh"
+            android:title="个人信息"
+            />
+        <item
+            android:id="@+id/join"
+            android:icon="@mipmap/singer"
+            android:title="歌手入驻"
+            />
+        <item
+            android:id="@+id/message"
+            android:title="我的消息" />
+        <item
+            android:id="@+id/works"
+            android:title="我的作品" />
+        <item
+            android:id="@+id/orders"
+            android:title="我的订单" />
+        <item
+            android:id="@+id/vip"
+            android:title="会员VIP" />
+        <item
+            android:id="@+id/settings"
+            android:title="设置" />
+    </group>
+
+<!--    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--我的作品item的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EDEDED"/>
+    <ImageView
+        android:id="@+id/works_image"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/order_song_image"
+        android:layout_marginBottom="23dp"
+        />
+    <TextView
+        android:id="@+id/works_albumname"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/works_image"
+        android:layout_marginLeft="15dp"
+        android:text="专辑名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/myworks_albumname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/works_albumname"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/works_albumname"
+        android:text="苏格拉没有底"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/works_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已售出"
+        android:layout_toRightOf="@id/works_image"
+        android:layout_below="@id/works_albumname"
+        android:layout_alignLeft="@id/works_albumname"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/myworks_saleCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/works_sale"
+        android:layout_alignBottom="@id/works_sale"
+        android:layout_marginLeft="30dp"
+        android:text="100000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/works_collections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/works_sale"
+        android:layout_alignLeft="@id/works_sale"
+        android:text="已收藏"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/myworks_collectionsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/works_collections"
+        android:layout_alignBottom="@id/works_collections"
+        android:layout_marginLeft="30dp"
+        android:text="21281832"
+        android:textSize="15sp"
+        />
+
+
+
+</RelativeLayout>

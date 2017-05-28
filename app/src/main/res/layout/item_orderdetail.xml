@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="商品详情"
+        android:textSize="23sp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:id="@+id/image_order_detail"
+            android:layout_width="61dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/order_song_image"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/order_detail_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_order_detail"
+            android:text="专辑"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_detail_album"
+            android:text="《"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_order_albumName"
+            android:layout_toRightOf="@id/tv_1"
+            android:text="苏格拉没有底"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_order_albumName"
+            android:text="》"/>
+
+        <TextView
+            android:id="@+id/album_price"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="9.9"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/album_price"
+            android:text="￥"
+            android:layout_alignBottom="@id/album_price"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="9.9"
+            android:textColor="#f00"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#f00"
+            android:layout_toLeftOf="@id/pay_price"/>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#EDEDED"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ordernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号 :"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ordernumber"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="129813237724729739437"/>
+
+        <TextView
+            android:id="@+id/ordertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ordernumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="下单时间 :"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ordertime"
+            android:layout_alignBottom="@id/ordertime"
+            android:layout_marginLeft="10dp"
+            android:text="2017-04-12  12:33:21"/>
+        <TextView
+            android:id="@+id/payway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/ordertime"
+            android:text="支付方式 :"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/payway"
+            android:layout_alignBottom="@id/payway"
+            android:layout_marginLeft="10dp"
+            android:text="微信支付"/>
+        <TextView
+            android:id="@+id/completetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付完成时间 :"
+            android:layout_below="@id/payway"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-04-12  13:21:21"
+            android:layout_alignBottom="@id/completetime"
+            android:layout_toRightOf="@id/completetime"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

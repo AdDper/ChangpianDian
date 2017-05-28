@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zilong.demo.changpiandian">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <!-- 上面这个是为了避免输入框输入时将导航栏顶上去了 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LocalMusicActivity" />
+        <activity android:name=".activity.PlayDetail" />
+
+        <service android:name=".service.MusicService" />
+
+        <activity android:name=".activity.MyOrdersActivity" />
+        <activity android:name=".activity.UploadFileActivity" />
+        <activity android:name=".activity.EditPersonalActivity" />
+        <activity android:name=".activity.MyWorks" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.MyMsgActivity" />
+        <activity android:name=".activity.ListenActivity" />
+        <activity android:name=".activity.DownloadActivity" />
+        <activity android:name=".activity.BuyRecordsActivity" />
+        <activity android:name=".activity.CollectionsActivity" />
+        <activity android:name=".activity.VipActivity" />
+        <activity android:name=".activity.SingerJoinActivity" />
+        <activity android:name=".activity.ItemOrderActivty" />
+        <activity android:name=".activity.ItemWorkActivity" />
+        <activity android:name=".activity.MusicManMoreActivity" />
+        <activity android:name=".activity.SingerMoreActivity" />
+        <activity android:name=".activity.BarDetail"></activity>
+    </application>
+
+</manifest>

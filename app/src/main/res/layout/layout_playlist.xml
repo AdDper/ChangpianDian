@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Rel-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/playlist_top_rel">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/playlist_random"
+            android:layout_width="@dimen/playlist_top_mode_image"
+            android:layout_height="@dimen/playlist_top_mode_image"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/pl_random"
+            />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/mode_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/playlist_random"
+            android:text="播放模式"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="("
+            android:layout_toRightOf="@id/mode_pl"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/playlist_songCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首数"
+            android:layout_toRightOf="@id/left"
+            />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:layout_toRightOf="@id/playlist_songCount"
+            />
+
+        <!--从列表中删去全部-->
+        <LinearLayout
+            android:id="@+id/linear_del_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:id="@+id/playlist_delete_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pl_del_all"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="#EDEDED"
+            android:layout_toLeftOf="@id/linear_del_all"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+
+    <ListView
+        android:id="@+id/lv_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ListView>
+
+</LinearLayout>

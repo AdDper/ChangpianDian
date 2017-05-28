@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+    </style>
+
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
+
+    <!--我的-->
+
+    <!--一个item项的布局-->
+    <style name="minePage">
+        <item name="android:layout_height">@dimen/mine_rel_layout_height</item>
+        <item name="android:layout_marginTop">@dimen/mine_rel_layout_marginTop</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+
+    <!--图标的布局-->
+    <style name="mine_detail_image">
+        <item name="android:layout_width">@dimen/mine_detail_image_layout_width</item>
+        <item name="android:layout_height">@dimen/mine_detail_image_layout_height</item>
+        <item name="android:layout_marginLeft">@dimen/mine_detail_image_layout_marginLeft</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--字体的布局-->
+    <style name="mine_detail_textview">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/mine_tv_layout_marginLeft</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/mine_tv_size</item>
+    </style>
+
+    <!--item中的更多-->
+    <style name="mine_detail_more">
+        <item name="android:layout_width">@dimen/mine_detail_more_layout_width</item>
+        <item name="android:layout_height">@dimen/mine_detail_more_layout_height</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/mine_detail_more_layout_marginRight</item>
+    </style>
+
+
+    <!--我的音乐-->
+
+
+    <!--我的音乐的一个item-->
+    <style name="mymusic_item">
+        <item name="android:layout_marginTop">@dimen/mymusic_item_layout_marginTop</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mymusic_item_layout_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#fff</item>
+    </style>
+
+    <!--图标-->
+    <style name="mymusic_image">
+        <item name="android:layout_width">@dimen/mymusic_layout_width</item>
+        <item name="android:layout_height">@dimen/mymusic_layout_height</item>
+        <item name="android:layout_marginLeft">@dimen/mymusic_layout_marginLeft</item>
+
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--字体-->
+    <style name="mymusic_tv">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/mymusic_tv_textSize</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/mymusic_tv_layout_marginLeft</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <!--上传文件-->
+    <!--itemlayout除了第一个其余都一样-->
+    <style name="upload_itemlayout">
+        <item name="android:layout_height">@dimen/upload_linear_itemlayout_height</item>
+        <item name="android:layout_marginTop">@dimen/upload_linear_marginTop</item>
+    </style>
+
+    <!-- 上传按钮-->
+    <style name="upload_button">
+        <item name="android:layout_marginTop">@dimen/upload_button_layout_marginTop</item>
+        <item name="android:layout_width">@dimen/upload_button_width</item>
+        <item name="android:layout_height">@dimen/upload_button_height</item>
+        <item name="android:textSize">@dimen/upload_button_textSize</item>
+    </style>
+
+
+</resources>

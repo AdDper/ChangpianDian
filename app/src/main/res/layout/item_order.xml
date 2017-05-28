@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EDEDED"/>
+    <ImageView
+        android:id="@+id/order_image"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/order_song_image"
+        android:layout_marginBottom="22dp"
+        />
+    <TextView
+        android:id="@+id/order_tv1"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/order_image"
+        android:layout_marginLeft="15dp"
+        android:text="已购买"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/order_tv1"
+        android:layout_alignBottom="@id/order_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="专辑"/>
+
+    <LinearLayout
+        android:id="@+id/linear_albumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_image"
+        android:layout_below="@id/order_tv1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <TextView
+        android:id="@+id/order_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="《" />
+    <TextView
+        android:id="@+id/order_album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="苏格拉没有底"
+        android:layout_toRightOf="@id/order_left"
+        android:layout_alignBottom="@id/order_left"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_album_name"
+        android:layout_alignBottom="@id/order_album_name"
+        android:textSize="16sp"
+        android:text="》"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数量:"
+        android:layout_toRightOf="@id/order_image"
+        android:layout_below="@id/linear_albumName"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/order_album_salecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignBottom="@id/order_count"
+        android:layout_toRightOf="@id/order_count"
+        android:layout_marginLeft="3dp"
+        />
+
+    <TextView
+        android:id="@+id/order_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="付款:  ￥"
+        android:layout_below="@id/order_count"
+        android:layout_alignLeft="@id/order_count"
+        android:layout_marginTop="4dp"
+        />
+    <TextView
+        android:id="@+id/order_album_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_pay"
+        android:layout_alignBottom="@id/order_pay"
+        android:text="20.00"
+        />
+
+
+</RelativeLayout>

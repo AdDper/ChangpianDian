@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:id="@+id/album_linear"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/album_bg"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:id="@+id/image_album"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/jay"
+            android:scaleType="centerCrop"
+            android:background="@mipmap/album_bg"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/price_album"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/album_linear"
+        android:layout_alignLeft="@id/album_linear"
+        android:src="@mipmap/price"/>
+    <TextView
+        android:id="@+id/singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_linear"
+        android:layout_toRightOf="@id/price_album"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="周杰伦"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/albumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/price_album"
+        android:layout_below="@id/singer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="周杰伦的床边故事"
+        android:maxLines="1"
+        />
+
+</RelativeLayout>

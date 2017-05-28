@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_work"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zilong.demo.changpiandian.activity.ItemWorkActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/work_album_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@mipmap/geshoutupian"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/work_album_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_album_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="专辑简介"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/work_album_info"
+        android:layout_alignBottom="@id/work_album_info"
+        android:text="这个专辑厉害了！"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/yuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/work_album_image"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="15dp"
+        android:text="元"
+        android:textColor="#0f0"
+        />
+    <TextView
+        android:id="@+id/price_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/yuan"
+        android:layout_alignBottom="@id/yuan"
+        android:layout_marginRight="5dp"
+        android:text="9.9"
+        android:textColor="#0f0"/>
+    <TextView
+        android:id="@+id/work_album_priceall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/yuan"
+        android:layout_toLeftOf="@id/price_all"
+        android:layout_marginRight="10dp"
+        android:text="专辑总价"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_album_priceall"
+        android:layout_alignLeft="@id/work_album_priceall"
+        android:text="是否售卖"
+        android:layout_marginTop="10dp"/>
+    <!--自定义控件，用来转换设置的-->
+
+    </RelativeLayout>
+
+    <com.github.jdsjlzx.recyclerview.LuRecyclerView
+        android:layout_below="@id/rel_album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+    </com.github.jdsjlzx.recyclerview.LuRecyclerView>
+
+</RelativeLayout>

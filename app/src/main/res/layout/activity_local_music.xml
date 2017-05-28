@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_local_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zilong.demo.changpiandian.activity.LocalMusicActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/title_720p">
+            <ImageView
+                android:id="@+id/local_return"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@mipmap/getreturn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地歌曲"
+                android:layout_centerInParent="true"
+                />
+            <ImageView
+                android:id="@+id/local_player"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/music_play"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+<!--
+    &lt;!&ndash;全部播放&ndash;&gt;
+    <RelativeLayout
+        android:id="@+id/rel_playall"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/image_playall"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/play"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部播放"
+            android:layout_toRightOf="@id/image_playall"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        
+    </RelativeLayout>-->
+
+    <!--我是分割线~~~-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EDEDED"/>
+
+    <!--歌曲列表-->
+    <ListView
+        android:id="@+id/lv_localmusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
